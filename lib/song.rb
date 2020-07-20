@@ -46,7 +46,8 @@ class Song
     artist_name = split[0]
     song_name = split[1].gsub(".mp3", "")
     song = Song.new
-    
+    song.name = song_name
+    song.artist = artist_name
   end
   
   def self.create_from_filename(name)
